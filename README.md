@@ -1,6 +1,10 @@
 # 说明：
 
-感谢 <a href='https://github.com/zqwzshm'>zqwzshm</a>
+感谢下面的小伙伴贡献自己的代码 
+
+<a href='https://github.com/zqwzshm'>zqwzshm</a>
+
+<a href='https://github.com/SherlockOy'>SherlockOy</a>
 
 有想参加周末COMP9024 免费打卡的，可以加我下面的微信，我拉到免费的周末打卡群
 
