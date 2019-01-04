@@ -222,9 +222,9 @@ int method_03(DLList L1, DLList L2) {
 
 int subsetList(DLList L1, DLList L2) {
     // second method
-    return method_01(L1, L2);
+    // return method_01(L1, L2);
     // return method_02(L1, L2);
-    // return method_03(L1, L2);
+    return method_03(L1, L2);
 }
 
 
