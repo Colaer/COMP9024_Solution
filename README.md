@@ -19,6 +19,13 @@
 
 	https://github.com/marey/COMP9024_Solution/tree/master/exams/18S2-sample-midterm
 
+3. The instruction for second assignment could be here:
+	
+	https://github.com/marey/COMP9024_Solution/tree/master/assignment2
+	
+4. The context for final-term could be available here:
+
+	https://github.com/marey/COMP9024_Solution/tree/master/exams/18S2-sample-finalterm
 
 
 
