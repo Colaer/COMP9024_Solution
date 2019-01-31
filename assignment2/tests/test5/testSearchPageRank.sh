@@ -1,2 +1,2 @@
 #!/bin/sh
-./searchPagerank.out mars design design design mars mars reproach their sorest booking collapses > searchPagerank.txt
+./searchPagerank.out dilemma shipment forms eggs mars design design design mars mars reproach their sorest booking collapses width > searchPagerank.txt
