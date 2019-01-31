@@ -56,11 +56,13 @@ do
 		exit 1
 	fi
 
-	if [[ -f ${work_path}/results/${test_dir}/test.sh ]]
+	if [[ -f ${work_path}/results/${test_dir}/testSearchPageRank.sh ]]
 	then
-		./test.sh
+		./testSearchPageRank.sh
+		rm -rf ${BIN}
 	else
 		./${BIN} >> ${work_path}/results/${test_dir}/${OUTPUT_FILE}
+		rm -rf ${BIN}
 	fi
 	echo " "
 	echo " "
@@ -80,8 +82,3 @@ do
 	fi
 	echo "------------------------------ "
 done
-
-echo "
-
-
-
