@@ -25,8 +25,8 @@ light url23 url31
 linear url11 url21
 long url11
 man url32
-mars url23 url21 url11 url22 url32 url34
-moon url23 url22 url32 url31 url34
+mars url11 url21 url22 url23 url32 url34
+moon url22 url23 url31 url32 url34
 moons url23
 nasa url34
 observations url11
@@ -41,18 +41,18 @@ red url32
 revealed url11 url21
 robot url34
 robotics url32
-seasonal url21 url11 url22
+seasonal url11 url21 url22
 small url23
 subject url11
-sun url23 url22 url31 url32
+sun url22 url23 url31 url32
 surface url11 url21
 telescopic url11
 that url11
 the url11
 to url11 url21
 vegetation url11 url21
-volcano url31 url23 url32 url34
+volcano url23 url31 url32 url34
 waves url23
-weather url32 url31 url34
+weather url31 url32 url34
 were url11 url21
 winds url22 url23
