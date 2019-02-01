@@ -6,11 +6,11 @@ assignment2的测试,主要采用文件比对的方式
 
 测试顺序：
 
-./testPagerank.h 测试page rank代码
+./testPagerank.sh 测试page rank代码
 
-./testInverted.h 测试inverted index 代码
+./testInverted.sh 测试inverted index 代码
 
-./testSearchPageRank.h 测试 search engine 代码
+./testSearchPageRank.sh 测试 search engine 代码
 
 
 
