@@ -93,6 +93,12 @@ int countLeaf(Tree);
 int countOdds(Tree);
 
 /**
+ * count odder level nodes
+ * @return count
+ */
+int countOdderLevelNodes(Tree);
+
+/**
  * search val in tree
  * @return return target tree
  */

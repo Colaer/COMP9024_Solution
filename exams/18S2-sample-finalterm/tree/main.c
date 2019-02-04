@@ -20,9 +20,7 @@ int main() {
     tree = insertTree(tree, 6);
     tree = insertTree(tree, 5);
     tree = insertTree(tree, 4);
-
     tree = insertTree(tree, 15);
-
     tree = insertTree(tree, 12);
     tree = insertTree(tree, 14);
     tree = insertTree(tree, 20);
@@ -58,9 +56,6 @@ int main() {
     printf("\nprint tree by pre order:\n");
     printPreOrderTree(tree);
 
-    // print tree
-    showTree(tree);
-
     // print pre order
     printf("\nprint tree by pre order index:\n");
     printPreOrderTreeIndex(tree);
@@ -81,4 +76,11 @@ int main() {
     printf("\n print tree height add node value by level order:\n");
     printHeightAddNodeValues(tree);
 
+    // print level order
+    printf("\n odder level count nodes :\n ");
+    int countOdderLevel = countOdderLevelNodes(tree);
+    printf("\n odder level count nodes %d \n",countOdderLevel);
+
+    // print tree
+    showTree(tree);
 }

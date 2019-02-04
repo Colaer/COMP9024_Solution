@@ -361,6 +361,30 @@ int countOdds(Tree tree) {
 }
 
 /**
+ * count odder level nodes
+ * @return count
+ */
+int countOdderLevelNodesByLevel(Tree tree, int level) {
+    // check null
+    int result = 0;
+    if (tree != NULL) {
+        result = level % 2
+                 + countOdderLevelNodesByLevel(left(tree), level - 1)
+                 + countOdderLevelNodesByLevel(right(tree), level - 1);
+        if (level % 2 == 1) {
+            printf("height:%d, tree node :%d,\n", level, data(tree));
+        }
+    }
+
+    return result;
+}
+
+int countOdderLevelNodes(Tree tree) {
+    // check null
+    return countOdderLevelNodesByLevel(tree, heightTree(tree));
+}
+
+/**
  * search val in tree
  * @param val value
  * @return return target tree
@@ -603,7 +627,7 @@ bool isBalancedByNumberOfNodes(Tree tree) {
         // check left and right and current node
         result = isBalancedByNumberOfNodes(left(tree))
                  && isBalancedByNumberOfNodes(right(tree))
-                 && fabs((double)countNodes(left(tree)) - countNodes(right(tree))) < 2;
+                 && abs(countNodes(left(tree)) - countNodes(right(tree))) < 2;
 
         printf("tree node is: %d, check result is: %d\n", data(tree), result);
     }
