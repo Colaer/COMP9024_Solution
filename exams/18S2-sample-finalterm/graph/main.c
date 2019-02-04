@@ -116,7 +116,7 @@ bool dfsCycleCheck(Graph graph, Vertex v, Vertex u, int numberOfVertices) {
  */
 bool hasCycle(Graph graph, int numberOfVertices) {
     // variable
-    Vertex vertex = 0;
+    Vertex vertex;
 
     // set default
     for (vertex = 0; vertex < numberOfVertices; vertex++) {
@@ -167,15 +167,13 @@ void testDfsCycleCheck() {
  * @return
  */
 bool dfsPathCheck(Graph graph, Vertex src, Vertex dest, int numberOfVertices) {
-    Vertex w = 0;
-    for (w = 0; w < numberOfVertices; w++) {
+    for (Vertex w = 0; w < numberOfVertices; w++) {
         // edge
-        if (adjacent(graph, src, w) && visited[w] == -1) {
+        if (adjacent(graph, src, w) && !visited[w]) {
             // set visited
             visited[w] = src;
             // if found
-            if (w == dest
-                || dfsPathCheck(graph, src, dest, numberOfVertices)) {
+            if (w == dest || dfsPathCheck(graph, w, dest, numberOfVertices)) {
                 return true;
             }
         }
@@ -194,8 +192,8 @@ bool dfsPathCheck(Graph graph, Vertex src, Vertex dest, int numberOfVertices) {
 void findPath(Graph graph, Vertex src, Vertex dest, int numberOfVertices) {
 
     // set default
-    Vertex vertex = 0;
-    for (vertex = 0; vertex < numberOfVertices; vertex++) {
+    Vertex vertex;
+    for (Vertex vertex = 0; vertex < numberOfVertices; vertex++) {
         visited[vertex] = -1;
     }
     // start

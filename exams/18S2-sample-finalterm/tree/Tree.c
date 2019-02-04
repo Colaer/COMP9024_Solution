@@ -280,8 +280,8 @@ int widthRightTree(Tree tree) {
     int result = (tree != NULL);
     // not null
     if (result) {
-        // continue check right
-        result += widthRightTree(right(tree));
+        // continue check left
+        result += widthLeftTree(right(tree));
     }
     // return result
     return result;
@@ -486,6 +486,20 @@ void printLevelOrderTree(Tree tree) {
         printf("\n");
         // print given level
         printGivenLevel(tree, i);
+    }
+}
+
+/**
+ * print height add node values
+ */
+void printHeightAddNodeValues(Tree tree) {
+    // check not null
+    if (tree != NULL) {
+        data(tree) = data(tree) + heightTree(tree);
+        // go left
+        printHeightAddNodeValues(left(tree));
+        // go right
+        printHeightAddNodeValues(right(tree));
     }
 }
 

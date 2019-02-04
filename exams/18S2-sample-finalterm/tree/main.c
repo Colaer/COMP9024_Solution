@@ -58,6 +58,7 @@ int main() {
     printf("\nprint tree by pre order:\n");
     printPreOrderTree(tree);
 
+    // print tree
     showTree(tree);
 
     // print pre order
@@ -75,5 +76,9 @@ int main() {
     // print level order
     printf("\n print tree by level order:\n");
     printLevelOrderTree(tree);
+
+    // print level order
+    printf("\n print tree height add node value by level order:\n");
+    printHeightAddNodeValues(tree);
 
 }

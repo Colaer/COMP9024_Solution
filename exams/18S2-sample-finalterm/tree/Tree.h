@@ -140,6 +140,11 @@ void printPostOrderTree(Tree);
 void printLevelOrderTree(Tree);
 
 /**
+ * print height add node values
+ */
+void printHeightAddNodeValues(Tree);
+
+/**
  * join two tree
  * max(key(t1)) < min(key(k2))
  *
