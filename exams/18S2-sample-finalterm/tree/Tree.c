@@ -280,8 +280,8 @@ int widthRightTree(Tree tree) {
     int result = (tree != NULL);
     // not null
     if (result) {
-        // continue check left
-        result += widthLeftTree(right(tree));
+        // continue check right
+        result += widthRightTree(right(tree));
     }
     // return result
     return result;
